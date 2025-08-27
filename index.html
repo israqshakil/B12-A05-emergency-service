@@ -29,25 +29,29 @@
   </head>
   <body>
     <!-- navigation section -->
-    <header class="flex justify-between mx-[60px] py-4">
+    <header class="flex justify-between mx-2 lg:mx-[60px] py-4">
       <div class="flex items-center gap-2">
         <img src="./assets/logo.png" alt="" class="w-12" />
         <p class="text-[#006747] font-bold text-[18px]">
           Emergency <br />Service
         </p>
       </div>
-      <div class="flex items-center gap-5">
-        <div class="flex items-center gap-1 px-4 py-1 bg-green-50 rounded-3xl">
+      <div class="flex items-center gap-0.5 lg:gap-5">
+        <div
+          class="flex items-center gap-1 px-2 lg:px-4 py-1 bg-green-50 rounded-3xl"
+        >
           <p class="font-semibold">0</p>
           <img src="./assets/heart.png" alt="" class="w-7" />
         </div>
-        <div class="flex items-center gap-1 px-4 py-1 bg-green-50 rounded-3xl">
+        <div
+          class="flex items-center gap-1 px-2 lg:px-4 py-1 bg-green-50 rounded-3xl"
+        >
           <p class="font-semibold">100</p>
           <img src="./assets/coin.png" alt="" class="w-7" />
         </div>
         <div>
           <button
-            class="btn btn-active btn-success text-white rounded-3xl px-4 py-1"
+            class="btn btn-active btn-success text-white rounded-3xl px-2 lg:px-4 py-1"
           >
             2 Copy
           </button>
@@ -59,21 +63,24 @@
       class="flex flex-col justify-center items-center bg-gradient-to-r from-green-900 via-green-800 to-green-900 py-3"
     >
       <img src="./assets/logo.png" alt="" class="w-20" />
-      <h2 class="font-bold text-[40px] text-white">
+      <h2 class="font-bold text-2xl lg:text-[40px] text-white">
         Emergency Service Directory
       </h2>
-      <p class="font-semibold text-white">
+      <p class="lg:font-semibold font-normal text-white mx-5">
         Government Emergency Services at Your Fingertip – A Project by
         Government of the People’s Republic of Bangladesh
       </p>
     </div>
-    <!-- main section -->
+    <!-- main section  -->
     <main class="main bg-green-100">
       <section
         id="main-section"
-        class="w-11/12 mx-auto py-10 grid grid-cols-12 gap-7"
+        class="lg:w-11/12 lg:mx-auto py-10 grid grid-cols-12 gap-0.5 lg:gap-7"
       >
-        <div id="left" class="col-span-9 p-3 grid grid-cols-3 gap-7">
+        <div
+          id="left"
+          class="lg:col-span-9 col-span-7 p-3 grid grid-cols-1 lg:grid-cols-3 gap-7"
+        >
           <div class="bg-white rounded-2xl shadow p-3">
             <div class="flex justify-between items-center">
               <div class="bg-pink-200 rounded-xl p-2">
@@ -94,16 +101,18 @@
                 <p>All</p>
               </div>
             </div>
-            <div class="flex justify-between items-center gap-4">
+            <div class="flex justify-between items-center lg:gap-4 gap-0.5">
               <div class="">
-                <button class="btn border-2 text-black rounded-3xl px-5">
+                <button
+                  class="btn border-2 text-black lg:rounded-3xl lg:px-5 rounded-xl px-3"
+                >
                   <i class="fa-regular fa-copy"></i>
                   Copy
                 </button>
               </div>
               <div>
                 <button
-                  class="btn btn-active btn-success text-white rounded-3xl px-5"
+                  class="btn btn-active btn-success text-white lg:rounded-3xl lg:px-5 rounded-xl px-3"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -131,16 +140,18 @@
                 <p>Police</p>
               </div>
             </div>
-            <div class="flex justify-between items-center gap-4">
+            <div class="flex justify-between items-center lg:gap-4 gap-0.5">
               <div class="">
-                <button class="btn border-2 text-black rounded-3xl px-5">
+                <button
+                  class="btn border-2 text-black lg:rounded-3xl lg:px-5 rounded-xl px-3"
+                >
                   <i class="fa-regular fa-copy"></i>
                   Copy
                 </button>
               </div>
               <div>
                 <button
-                  class="btn btn-active btn-success text-white rounded-3xl px-5"
+                  class="btn btn-active btn-success text-white lg:rounded-3xl lg:px-5 rounded-xl px-3"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -168,16 +179,18 @@
                 <p>Fire</p>
               </div>
             </div>
-            <div class="flex justify-between items-center gap-4">
+            <div class="flex justify-between items-center lg:gap-4 gap-0.5">
               <div class="">
-                <button class="btn border-2 text-black rounded-3xl px-5">
+                <button
+                  class="btn border-2 text-black lg:rounded-3xl lg:px-5 rounded-xl px-3"
+                >
                   <i class="fa-regular fa-copy"></i>
                   Copy
                 </button>
               </div>
               <div>
                 <button
-                  class="btn btn-active btn-success text-white rounded-3xl px-5"
+                  class="btn btn-active btn-success text-white lg:rounded-3xl lg:px-5 rounded-xl px-3"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -205,16 +218,18 @@
                 <p>Health</p>
               </div>
             </div>
-            <div class="flex justify-between items-center gap-4">
+            <div class="flex justify-between items-center lg:gap-4 gap-0.5">
               <div class="">
-                <button class="btn border-2 text-black rounded-3xl px-5">
+                <button
+                  class="btn border-2 text-black lg:rounded-3xl lg:px-5 rounded-xl px-3"
+                >
                   <i class="fa-regular fa-copy"></i>
                   Copy
                 </button>
               </div>
               <div>
                 <button
-                  class="btn btn-active btn-success text-white rounded-3xl px-5"
+                  class="btn btn-active btn-success text-white lg:rounded-3xl lg:px-5 rounded-xl px-3"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -242,16 +257,18 @@
                 <p>Help</p>
               </div>
             </div>
-            <div class="flex justify-between items-center gap-4">
+            <div class="flex justify-between items-center lg:gap-4 gap-0.5">
               <div class="">
-                <button class="btn border-2 text-black rounded-3xl px-5">
+                <button
+                  class="btn border-2 text-black lg:rounded-3xl lg:px-5 rounded-xl px-3"
+                >
                   <i class="fa-regular fa-copy"></i>
                   Copy
                 </button>
               </div>
               <div>
                 <button
-                  class="btn btn-active btn-success text-white rounded-3xl px-5"
+                  class="btn btn-active btn-success text-white lg:rounded-3xl lg:px-5 rounded-xl px-3"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -279,16 +296,18 @@
                 <p>Govt</p>
               </div>
             </div>
-            <div class="flex justify-between items-center gap-4">
+            <div class="flex justify-between items-center lg:gap-4 gap-0.5">
               <div class="">
-                <button class="btn border-2 text-black rounded-3xl px-5">
+                <button
+                  class="btn border-2 text-black lg:rounded-3xl lg:px-5 rounded-xl px-3"
+                >
                   <i class="fa-regular fa-copy"></i>
                   Copy
                 </button>
               </div>
               <div>
                 <button
-                  class="btn btn-active btn-success text-white rounded-3xl px-5"
+                  class="btn btn-active btn-success text-white lg:rounded-3xl lg:px-5 rounded-xl px-3"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -316,16 +335,18 @@
                 <p>Electricity</p>
               </div>
             </div>
-            <div class="flex justify-between items-center gap-4">
+            <div class="flex justify-between items-center lg:gap-4 gap-0.5">
               <div class="">
-                <button class="btn border-2 text-black rounded-3xl px-5">
+                <button
+                  class="btn border-2 text-black lg:rounded-3xl lg:px-5 rounded-xl px-3"
+                >
                   <i class="fa-regular fa-copy"></i>
                   Copy
                 </button>
               </div>
               <div>
                 <button
-                  class="btn btn-active btn-success text-white rounded-3xl px-5"
+                  class="btn btn-active btn-success text-white lg:rounded-3xl lg:px-5 rounded-xl px-3"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -353,16 +374,18 @@
                 <p>NGO</p>
               </div>
             </div>
-            <div class="flex justify-between items-center gap-4">
+            <div class="flex justify-between items-center lg:gap-4 gap-0.5">
               <div class="">
-                <button class="btn border-2 text-black rounded-3xl px-5">
+                <button
+                  class="btn border-2 text-black lg:rounded-3xl lg:px-5 rounded-xl px-3"
+                >
                   <i class="fa-regular fa-copy"></i>
                   Copy
                 </button>
               </div>
               <div>
                 <button
-                  class="btn btn-active btn-success text-white rounded-3xl px-5"
+                  class="btn btn-active btn-success text-white lg:rounded-3xl lg:px-5 rounded-xl px-3"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -390,16 +413,18 @@
                 <p>Travel</p>
               </div>
             </div>
-            <div class="flex justify-between items-center gap-4">
+            <div class="flex justify-between items-center lg:gap-4 gap-0.5">
               <div class="">
-                <button class="btn border-2 text-black rounded-3xl px-5">
+                <button
+                  class="btn border-2 text-black lg:rounded-3xl lg:px-5 rounded-xl px-3"
+                >
                   <i class="fa-regular fa-copy"></i>
                   Copy
                 </button>
               </div>
               <div>
                 <button
-                  class="btn btn-active btn-success text-white rounded-3xl px-5"
+                  class="btn btn-active btn-success text-white lg:rounded-3xl lg:px-5 rounded-xl px-3"
                 >
                   <i class="fa-solid fa-phone"></i>
                   Call
@@ -411,7 +436,7 @@
 
         <div
           id="right"
-          class="cart col-span-3 flex justify-between items-baseline p-3 bg-white rounded-2xl shadow"
+          class="cart lg:col-span-3 col-span-5 flex justify-between items-baseline p-2 mx-2 gap-0.5 lg:p-3 bg-white rounded-2xl shadow"
         >
           <div class="call-history flex justify-center items-baseline gap-1">
             <i class="fa-regular fa-clock"></i>
@@ -419,7 +444,7 @@
           </div>
           <div class="call-history-btn">
             <button
-              class="btn btn-active btn-success text-white rounded-3xl px-7"
+              class="btn btn-active btn-success text-white rounded-3xl lg:px-7 px-2"
             >
               Clear
             </button>
