@@ -1,16 +1,6 @@
-let heartCount = 0;
-let copyCount = 2;
-// let coins = 100;
-
-const heartDisplay = document.getElementById("heart-count");
-const copyDisplay = document.getElementById("copy-count");
-// const coinDisplay = document.getElementById("coin-count");
-// const historyList = document.getElementById("history-list");
-// const clearHistoryBtn = document.getElementById("clear-history");
-
 // heart icon
-// let heartCount = 0;
-// const heartDisplay = document.getElementById("heart-count");
+let heartCount = 0;
+const heartDisplay = document.getElementById("heart-count");
 const heartIcons = document.getElementsByClassName("heart-icon");
 for (let icon of heartIcons) {
   icon.addEventListener("click", function () {
@@ -20,8 +10,8 @@ for (let icon of heartIcons) {
 }
 
 // copy button
-// let copyCount = 2;
-// const copyDisplay = document.getElementById("copy-count");
+let copyCount = 2;
+const copyDisplay = document.getElementById("copy-count");
 const copyButtons = document.getElementsByClassName("copy-button");
 for (let button of copyButtons) {
   button.addEventListener("click", function () {
@@ -54,10 +44,10 @@ for (let btn of callButtons) {
       return;
     }
 
-    coins -= 20;
+    coins = coins - 20;
     coinDisplay.innerText = coins;
 
-    alert(`📞 Calling ${name} ${number}...`);
+    alert(`${name} ${number} is calling`);
 
     const time = new Date().toLocaleTimeString();
 
