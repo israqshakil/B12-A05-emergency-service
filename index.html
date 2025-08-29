@@ -81,7 +81,7 @@
       >
         <div
           id="left"
-          class="lg:col-span-9 col-span-7 p-3 grid grid-cols-1 lg:grid-cols-3 gap-7"
+          class="lg:col-span-9 col-span-7 mt-2 grid grid-cols-1 lg:grid-cols-3 gap-7"
         >
           <div class="bg-white rounded-2xl shadow p-3 card">
             <div class="flex justify-between items-center">
@@ -451,23 +451,30 @@
           </div>
         </div>
 
+        <!-- call history section -->
+
         <div
-          class="cart lg:col-span-3 col-span-5 flex justify-between items-baseline p-2 mx-2 gap-0.5 lg:p-3 bg-white rounded-2xl shadow"
+          class="flex flex-col bg-white rounded-2xl shadow lg:col-span-3 col-span-5 px-1 mt-2"
         >
-          <div class="flex justify-center items-baseline gap-1">
-            <i class="fa-regular fa-clock"></i>
-            <p>Call History</p>
-          </div>
-          <div>
-            <button
-              class="btn btn-active btn-success text-white rounded-3xl lg:px-7 px-2"
-            >
-              Clear
-            </button>
+          <div
+            class="cart flex justify-between items-baseline py-2 mx-2 gap-0.5 lg:py-3 bg-white rounded-2xl mb-2"
+          >
+            <div class="flex justify-center items-baseline gap-1">
+              <i class="fa-regular fa-clock"></i>
+              <p>Call History</p>
+            </div>
+            <div>
+              <button
+                id="clear-history"
+                class="btn btn-active btn-success text-white rounded-3xl lg:px-7 px-2"
+              >
+                Clear
+              </button>
+            </div>
           </div>
           <div
             id="history-list"
-            class="flex flex-col gap-2 overflow-y-auto text-sm"
+            class="flex flex-col gap-2 overflow-y-auto text-md"
           ></div>
         </div>
       </section>

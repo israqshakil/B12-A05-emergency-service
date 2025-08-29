@@ -1,12 +1,12 @@
 let heartCount = 0;
 let copyCount = 2;
-let coinNumber = 100;
+// let coins = 100;
 
 const heartDisplay = document.getElementById("heart-count");
 const copyDisplay = document.getElementById("copy-count");
-const coinDisplay = document.getElementById("coin-count");
-const historyList = document.getElementById("history-list");
-const clearHistoryBtn = document.getElementById("clear-history");
+// const coinDisplay = document.getElementById("coin-count");
+// const historyList = document.getElementById("history-list");
+// const clearHistoryBtn = document.getElementById("clear-history");
 
 // heart icon
 // let heartCount = 0;
@@ -39,6 +39,9 @@ for (let button of copyButtons) {
 }
 
 // call button
+let coins = 100;
+const coinDisplay = document.getElementById("coin-count");
+const historyList = document.getElementById("history-list");
 const callButtons = document.getElementsByClassName("call-button");
 for (let btn of callButtons) {
   btn.addEventListener("click", function () {
@@ -63,15 +66,12 @@ for (let btn of callButtons) {
       "flex items-center justify-between bg-[gray]/10 px-3 py-2 rounded-md shadow-sm";
 
     const left = document.createElement("div");
-    // left.className = "flex items-center gap-2";
 
-    const icon = document.createElement("i");
-    icon.className = "fa-solid fa-phone text-green-600";
+    left.className = "flex items-center gap-2";
 
     const text = document.createElement("div");
     text.innerHTML = `<p class="font-bold">${name}</p><p class="text-xs text-gray-600">${number}</p>`;
 
-    left.appendChild(icon);
     left.appendChild(text);
 
     const timeText = document.createElement("p");
@@ -83,3 +83,9 @@ for (let btn of callButtons) {
     historyList.prepend(item);
   });
 }
+
+//  Clear history
+const clearHistoryBtn = document.getElementById("clear-history");
+clearHistoryBtn.addEventListener("click", function () {
+  historyList.innerHTML = "";
+});
