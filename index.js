@@ -40,7 +40,7 @@ for (let btn of callButtons) {
     const number = card.querySelector(".service-number").innerText;
 
     if (coins < 20) {
-      alert("You don't have enough coins to make a call.");
+      alert("Sorry! Coins finished. You can't call now.");
       return;
     }
 
@@ -78,4 +78,23 @@ for (let btn of callButtons) {
 const clearHistoryBtn = document.getElementById("clear-history");
 clearHistoryBtn.addEventListener("click", function () {
   historyList.innerHTML = "";
+});
+
+// button hover function
+
+let buttons = document.querySelectorAll("button");
+
+buttons.forEach(function (button) {
+  button.addEventListener("mouseover", function () {
+    button.style.backgroundColor = "blue";
+    button.style.color = "white";
+    button.style.transform = "scale(1.1)";
+    button.style.transition = "0.3s";
+  });
+
+  button.addEventListener("mouseout", function () {
+    button.style.backgroundColor = "";
+    button.style.color = "";
+    button.style.transform = "scale(1)";
+  });
 });
